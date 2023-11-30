@@ -1,0 +1,130 @@
+.section-anchor {
+  background-color: white ;
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.dropdown-label {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.dropdown-input {
+  display: none;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.dropdown-input:checked + .dropdown-label + .dropdown-content {
+  max-height: 200px;
+}
+
+.dropdown-label:hover,
+.dropdown-label:focus {
+  color: #000000;
+}
+
+.square-link {
+  display: inline-block;
+  padding: 15px;
+  background-color: #ffffff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 60%;
+  width: 60px;
+  height: 55px;
+  line-height: 50px;
+  margin: 5px;
+}
+
+.navigation a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  color: #000000;
+}
+
+.custom-border {
+  border: 2px solid rgb(156, 156, 255);
+  padding: 5px 15px;
+  border-radius: 10px; 
+  background-color: #c0dde6; 
+}
+
+/* Slide Styles */
+.slide {
+  min-width: 45%;
+  box-sizing: border-box;
+  border: 2px solid #8ed28e;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#portfolio ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square-link {
+  display: inline-block;
+  padding: 15px;
+  background-color: #ffffff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 60%;
+  width: 60px;
+  height: 55px;
+  line-height: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.blog-section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-post {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .blog-post {
+      width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-post {
+      width: 100%;
+  }
+}

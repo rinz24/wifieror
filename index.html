@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+            padding: 25px;
+            background: linear-gradient(to top, #FFC3A0, #FFDFD3, #F9E185, #A0E6FF, #D3A0FF);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-fluid {
+            background: #627cffed; 
+        }
+
+        .header {
+            text-align: justify;
+            margin-bottom: 35px;
+        }
+
+        .navigation {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .navigation a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            color: #555;
+        }
+
+        .content {
+            max-width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            border: 5px solid rgb(21, 0, 91);
+            padding: 30px;
+        }
+
+        .profile-pic {
+            margin: 0 auto;
+            border: 10px solid rgb(3, 11, 90);
+            width: 40%;
+            height: auto;
+            text-align: center;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+        }
+
+        .slider-container {
+            max-width: 80px; 
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            animation: slideAnimation 8s infinite; 
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slideAnimation {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-50%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            75% {
+                transform: translateX(-200%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="arrow-down"></div>
+    <div class="container-fluid p-5 text-white text-center">
+        <h1>My Portofolio</h1>
+        <p>Alrismany Abigail Sudjarwo</p>
+        <p>27024841 | L1BC</p>
+    </div>
+    <div class="container mt-5">
+        <a class="section-anchor" id="about-section"></a>
+        <a class="section-anchor" id="portfolio-section"></a>
+        <a class="section-anchor" id="contact-section"></a>
+
+        <div class="row">
+            <div class="col-sm-4 border border-2 bg-primary text-white">
+                <input type="checkbox" id="aboutDropdown" class="dropdown-input">
+                <label for="aboutDropdown" class="btn btn-navy custom-border dropdown-label" tabindex="0">
+                    <a href="#about" class="section-link">About</a>
+                </label>
+                <div class="dropdown-content">
+                    <p>My gender</p>
+                    <p>Explanation</p>
+                    <p>My hobbies</p>
+                </div>
+            </div>
+            <div class="col-sm-4 border border-2 bg-primary text-white">
+                <input type="checkbox" id="portfolioDropdown" class="dropdown-input">
+                <label for="portfolioDropdown" class="btn btn-navy custom-border dropdown-label" tabindex="0">
+                    <a href="#portfolio" class="section-link">Portfolio</a>
+                </label>
+                <div class="dropdown-content">
+                    <p>Old school</p>
+                    <p>Programming skills</p>
+                </div>
+            </div>
+            <div class="col-sm-4 border border-2 bg-primary text-white">
+                <input type="checkbox" id="contactDropdown" class="dropdown-input">
+                <label for="contactDropdown" class="btn btn-navy custom-border dropdown-label" tabindex="0">
+                    <a href="#contact" class="section-link">Contact</a>
+                </label>
+                <div class="dropdown-content">
+                    <p>Email</p>
+                    <p>Instagram</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="profile-pic">
+        <img src="photo-diri.jpeg" alt="Ini Aku">
+    </div>
+    <div class="content">
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <img src="" alt="Alrismany Abigail Sudjarwo">
+            <h2>Select your gender:</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female" checked>
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                <label class="form-check-label" for="other">Other</label>
+            </div>
+            <p>I'm still learning all of this stuff, but thanks to my friend Alex, I've been able to complete some of it despite my glaring failures. But I believe I can pull it off, haha. I've been an introvert for the majority of my life, but I'm hoping that Binus International will help me become a more sociable person than I was before. I've also had a lot of fun in university these past few days. The worst part is that I have to deal with Binusmaya. I hope I can keep up with all this work in university. I appreciate your time and hope you don't mind that I'm here with you folks. I am a passionate web developer with a focus on creating user-friendly and visually appealing web applications.</p>
+        </div>
+        <div class="section">
+            <ul>
+                <p>Here are my hobbies:</p>
+                <li><a href="#">Listening to music</a></li>
+                <li><a href="#">Playing games</a></li>
+                <li><a href="#">Cooking</a></li>
+                <li><a href="#">Team sports and gym</a></li>
+            </ul>
+        </div>
+        <div class="slides">
+            <div class="slide">
+                <img src="IMG_4278.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="IMG_4281.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="IMG_4288.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="IMG_4277.jpeg" alt="Image 4">
+            </div>
+            <div class="slide">
+                <img src="IMG_4298.jpeg" alt="Image 5">
+            </div>
+        </div>
+        <div id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>Here are my old schools:</p>
+            <ul>
+                <li>
+                    <a href="https://www.sekolahasisi.sch.id">
+                        Junior High School Asisi
+                        <img src="junior_high_photo.jpg" alt="Junior High School Photo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sttheresia-jkt.sch.id">
+                        Senior High School Saint Theresia
+                        <img src="senior_high_photo.jpg" alt="Senior High School Photo">
+                    </a>
+                </li>
+            </ul>
+            <p>My programming skills:</p>
+            <label for="preference1">
+                <input type="checkbox" id="preference1" name="preference1" checked> 
+                PYTHON
+            </label>
+            <br>
+            <label for="preference2">
+                <input type="checkbox" id="preference2" name="preference2" checked> 
+                HTML
+            </label>
+            <br>
+            <label for="preference3">
+                <input type="checkbox" id="preference3" name="preference3">
+                JAVASCRIPT
+            </label>
+            <br>
+            <label for="preference4">
+                <input type="checkbox" id="preference4" name="preference4">
+                C#
+            </label>        
+        </div>
+        <div id="contact" class="section">
+            <div class="arrow"></div>
+            <h2>Contact</h2>
+            <p>Contact me at:</p>
+            <ul>
+                <section id="blog" class="blog-section">
+                    <div class="container">
+                        <h2>Blog</h2>
+                        <div class="blog-posts">
+                        </div>
+                    </div>
+                </section>
+                <li><a href="mailto:abigailalrismany@gmail.com">Email</a></li>
+                <li><a href="https://www.instagram.com/kurinnnn_24/?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
